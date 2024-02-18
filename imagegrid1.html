@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Wonders of the World</title>
+  <style>
+    .container {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 20px;
+    
+      
+    }
+
+    .heading {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 50px;
+    }
+
+    .grid {
+      display: grid;
+      height: auto;
+      width: auto;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+      justify-content:center;
+      grid-area: span;
+     
+    }
+    
+
+    .grid-item {
+      position:relative;
+      border-radius: 20px;
+      overflow: hidden;
+      
+      box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .grid-item:hover {
+      box-shadow: 0 8px 10px rgba(50, 50, 93, 0.15), 0 3px 5px rgba(0, 0, 0, 0.13);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transition: transform 0.3s ease-in-out;
+      background-size: cover;
+}
+
+    .grid-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .grid-item-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .grid-item:hover .grid-item-content {
+      opacity: 1;
+    }
+
+    .grid-item-title {
+      text-align: center;
+      margin-bottom: 10px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">7 Wonders of the World</h1>
+    <div class="grid">
+      <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" class="grid-item">
+        <img src="greatwallof china.jpg" alt="Great Wall of China">
+        <div class="grid-item-content">
+          <h2 class="grid-item-title">Great Wall of China</h2>
+        </div>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Petra" class="grid-item">
+        <img src="petra.jpeg" alt="Petra">
+        <div class="grid-item-content">
+          <h2 class="grid-item-title">Petra</h2>
+        </div>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Colosseum" class="grid-item">
+        <img src="colosseum.jpeg" alt="Colosseum">
+        <div class="grid-item-content">
+          <h2 class="grid-item-title">Colosseum</h2>
+        </div>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Chichen_Itza" class="grid-item">
+        <img src="itza.jpeg" alt="Chichen Itza">
+        <div class="grid-item-content">
+          <h2 class="grid-item-title">Chichen Itza</h2>
+        </div>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Machu_Picchu" class="grid-item">
+        <img src="machupicchu.jpeg" alt="Machu Picchu">
+        <div class="grid-item-content">
+          <h2 class="grid-item-title">Machu Picchu</h2>
+        </div>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Christ_the_Redeemer" class="grid-item">
+        <img src="christ.jpeg" alt="Christ the Redeemer">
+        <div class="grid-item-content">
+          <h2 class="grid-item-title">Christ the Redeemer</h2>
+        </div>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="grid-item">
+        <img src="tajmahal.jpeg" alt="Taj Mahal">
+        <div class="grid-item-content">
+          <h2 class="grid-item-title">Taj Mahal</h2>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
