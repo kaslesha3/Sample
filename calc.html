@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-image: url("math.webp");
+    background-repeat: none;
+    padding-top: 100px;
+}
+h1{
+    background-color: rgb(209, 210, 211);
+}
+table{
+    background-color: rgb(103, 105, 106);
+    height: 200px;
+    width: 200px;
+    
+}
+td{   height: 50px;
+    width: 50px;
+
+}
+button{
+    background-color:rgb(255, 255, 255);
+    height: 50px;
+    width: 50px;
+}
+input{
+    height:40px;
+    width:400px;
+}
+    </style>
+</head>
+
+<body>
+    <center>
+    <h1>CALCULATOR</h1>
+    <input type="text" id="result" readonly>
+    
+    <table>
+    <tr>
+        <td><button onclick="appendNumber(7)">7</button></td>
+        <td><button onclick="appendNumber(8)">8</button></td>
+        <td><button onclick="appendNumber(9)">9</button></td>
+        <td><button onclick="setOperator('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="appendNumber(4)">4</button></td>
+        <td><button onclick="appendNumber(5)">5</button></td>
+        <td><button onclick="appendNumber(6)">6</button></td>
+        <td><button onclick="setOperator('-')">-</button></td>
+    </tr>
+    <tr>
+    
+        <td><button onclick="appendNumber(3)">3</button></td>
+        <td><button  onclick="appendNumber(2)">2</button></td>
+        <td><button  onclick="appendNumber(1)">1</button></td>
+        <td><button onclick="setOperator('')"></button></td>
+    </tr>
+    <tr>
+        <td><button  onclick="appendNumber(0)">0</button></td>
+        <td><button onclick="clearresult('c')">c</button></td>
+        <td><button onclick="calculate('=')">=</button></td>
+        <td><button onclick="setOperator('/')">/</button></td>
+    </tr>
+</table>
+
+</body>
+</center>
+
+<script src="cal.js"></script>
+</html>
